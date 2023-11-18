@@ -1,6 +1,7 @@
+#include "WordClock.h"
+#ifdef ESPHOME_VERSION 
 #include "esphome/core/log.h"
 #include "word_clock_component.h"
-#include "WordClock.h"
 
 namespace esphome {
 namespace word_clock_component {
@@ -23,3 +24,4 @@ void WordClockComponent::dump_config(){
 
 }  // namespace android_auto_unit_assist_component
 }  // namespace esphome
+#endif

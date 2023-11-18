@@ -1,5 +1,7 @@
 #pragma once
 
+#ifdef ESPHOME_VERSION 
+
 #include "esphome/core/component.h"
 
 namespace esphome {
@@ -15,3 +17,5 @@ class WordClockComponent : public Component {
 
 }  // namespace word_clock_component
 }  // namespace esphome
+
+#endif
