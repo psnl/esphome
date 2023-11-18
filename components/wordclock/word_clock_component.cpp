@@ -1,5 +1,5 @@
 #include "WordClock.h"
-#ifdef ESPHOME_VERSION 
+#ifndef BUILD_DEBUG_WORD_CLOCK 
 #include "esphome/core/log.h"
 #include "word_clock_component.h"
 
