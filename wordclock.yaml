@@ -4,7 +4,7 @@ substitutions:
 esphome:
   name: "wordclock"
   friendly_name: "WordClock"
-  name_add_mac_suffix: true
+  #name_add_mac_suffix: true
   project:
     name: "Patric.WordClock"
     version: $project_version 
@@ -14,12 +14,15 @@ esphome:
     - makuna/NeoPixelBus@^2.7.6
 
 external_components:
-  - source:
-      type: local
-      path: custom_components
-    components: wordclock_component
+  # - source:
+  #     type: local
+  #     path: components
+  #   components: word_clock_component
+  - source: github://psnl/esphome@master
+    components: [ word_clock_component ]
+    refresh: 10min
 
-wordclock_component:
+word_clock_component:
   id: wordclock_component1
 
 esp32:
