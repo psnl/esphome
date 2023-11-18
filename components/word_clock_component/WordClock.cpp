@@ -17,7 +17,7 @@ void WordClock::Loop() {
   //   case 2 : ledStrip->SetPixelColor(rand()%156, RgbwColor(0,0,63,0)); break;
   //   case 3 : ledStrip->SetPixelColor(rand()%156, RgbwColor(0,0,0,63)); break;
   // }
-  ledStrip->SetPixelColor(rand()%156, RgbwColor(0,63,0,0));
+  ledStrip->SetPixelColor(rand()%156, RgbwColor(63,0,0,0));
   ledStrip->Show();
   delay(100);
 }
